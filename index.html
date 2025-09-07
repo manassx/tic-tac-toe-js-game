@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A clean and interactive Tic-Tac-Toe game built from scratch by Manas Saxena.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game by Manas Saxena</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/images/fav-icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/assets/js/custom.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="game">
+            <div class="header-container">
+                <h2 id="score-x">Player X : 0</h2>
+
+                <div class="msg-container">
+                    <h1 id="title" class="title-text active">Tic Tac Toe</h1>
+                    <h1 id="msg" class="title-text" >Congratulations! The Winner is</h1>
+                </div>
+                
+                <h2 id="score-o">Player O : 0</h2>
+            </div>
+            <div class="board">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+            <button class="reset btn">Reset Game</button>
+            <div class="toggle hide">
+                <button class="prev btn">
+                    <i class="fa-solid fa-caret-left"></i>prev move</button>
+                        <button class="new-btn btn">New Game</button>
+                        <button class="next btn">next move<i class="fa-solid fa-caret-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
