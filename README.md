@@ -8,7 +8,8 @@ A feature-rich implementation of the classic Tic-Tac-Toe game, built from scratc
 
 ---
 
-![Tic-Tac-Toe Screenshot](./path/to/your/screenshot.png)
+<img width="1719" height="812" alt="image" src="https://github.com/user-attachments/assets/ba9b1575-4aeb-482e-b347-c190bd91f6c1" />
+
 
 ## ✨ Features
 
@@ -30,10 +31,10 @@ To get a local copy up and running, follow these steps.
 
 1.  Clone the repository:
     ```sh
-    git clone [https://github.com/manassx/tic-tac-toe-js-game.git](https://github.com/manassx/tic-tac-toe-js-game.git)
+    git clone https://github.com/manassx/tic-tac-toe-js-game.git
     ```
 2.  Open `index.html` in your browser.
 
 ## Contact
 
-**Manas Saxena** - [[Your LinkedIn Profile URL](https://www.linkedin.com/in/saxenamanas/)]
+**Manas Saxena** - [LinkedIn](https://www.linkedin.com/in/saxenamanas/)
