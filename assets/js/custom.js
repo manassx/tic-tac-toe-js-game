@@ -69,6 +69,11 @@ function animateElement(element, animation) {
     element.classList.remove('animate__animated', animation);
   }, { once: true }); 
 }
+const removeWinLines = () => {
+    for (let i = 0; i < winningPatterns.length; i++) {
+        board.classList.remove(`win-pat-${i}`);
+    }
+};
 
 
 const showWinner = (winner) => {
@@ -79,7 +84,7 @@ const showWinner = (winner) => {
         scoreO++;
         scoreOElement.textContent = `Player O : ${scoreO}`;
     }
-    title.classList.remove('active'); // Fade out the "Tic Tac Toe" title
+    title.classList.remove('active'); 
     msg.classList.add('active');    
 
     animateElement(msg, 'animate__pulse');
@@ -124,9 +129,7 @@ const resetGame = (e) => {
     container.style.display = "block";
 
     //remove winning line
-    for (let i = 0; i < winningPatterns.length; i++) {
-        board.classList.remove(`win-pat-${i}`);
-    }
+    removeWinLines(); 
 
 
     //reset scores
@@ -170,6 +173,7 @@ newBtn.addEventListener("click", resetGame);
 
 prev.addEventListener("click", ()=>{
     if(currentMoveIndex>0){
+    removeWinLines(); 
     currentMoveIndex--;
     renderHistory(history[currentMoveIndex])
     }
@@ -177,6 +181,7 @@ prev.addEventListener("click", ()=>{
 
 next.addEventListener("click", ()=>{
     if(currentMoveIndex<history.length - 1){
+    removeWinLines(); 
     currentMoveIndex++;
     renderHistory(history[currentMoveIndex]);
     }
